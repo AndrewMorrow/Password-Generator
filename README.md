@@ -9,5 +9,6 @@ There will be a series of prompts that will ask you to select your criteria on w
 You will select the "OK" button for yes and the "Cancel" button for no.
 
 link to github pages
+https://andrewmorrow.github.io/Password-Generator/
 
 <img src="passwordGeneratorcreenshot.png">
