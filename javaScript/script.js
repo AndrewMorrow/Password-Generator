@@ -104,8 +104,10 @@ var specialChar = [
 alert(`Welcome to the Password Generator!
 Click the "Generate Password" button to generate a new password!`);
 
-// this listens for a user click on the
+// this listens for a user click on the generate password button
 generateBtn.addEventListener("click", userPrompts);
+
+// function that runs all of the user prompts when the generate password button is clicked
 function userPrompts() {
     alert(
         `The next few prompts will gather your requirements for your password.
