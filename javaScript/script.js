@@ -117,7 +117,7 @@ The OK button will select yes and the Cancel button will select no.`
     passLength = +prompt(
         "Please enter a length between 8 and 128 characters that you would like your password to be."
     );
-    // this checks passLength value to see if it is between 8 and 128
+    // this checks passLength value to see if it is between 8 and 128 and the function will be called again if it isnt
     if (passLength >= 8 && passLength <= 128) {
         // this checkes to see if they want uppercase in the password and returns a true or false value
         includeLower = confirm(
@@ -135,6 +135,7 @@ Click "OK" for yes or "Cancel" for no`
 Click "OK" for yes or "Cancel" for no`
         );
     } else {
+        // this will show if the user input a incorrect value
         alert(
             " That was not a valid input! The generator will now start over."
         );
