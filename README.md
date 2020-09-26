@@ -11,4 +11,4 @@ You will select the "OK" button for yes and the "Cancel" button for no.
 link to github pages
 https://andrewmorrow.github.io/Password-Generator/
 
-<img src="assets/passwordGeneratorcreenshot.png">
+<img src="assets\passwordGeneratorScreenshot.png">
