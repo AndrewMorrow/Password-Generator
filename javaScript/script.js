@@ -111,7 +111,7 @@ generateBtn.addEventListener("click", userPrompts);
 function userPrompts() {
     alert(
         `The next few prompts will gather your requirements for your password.
-The OK button will select yes and the Cancel button will select no.`
+The "OK" button will select yes and the "Cancel" button will select no.`
     );
     // this stores the users input for the length of the password they want
     passLength = +prompt(
