@@ -139,8 +139,10 @@ Click "OK" for yes or "Cancel" for no`
         alert(
             " That was not a valid input! The generator will now start over."
         );
+        // this restarts the function after an invalid input
         userPrompts();
     }
+    // this adds the special characters to the array if the user selected the yes option
     if (includeSpecial) {
         possibleChars = possibleChars.concat(specialChar);
     }
