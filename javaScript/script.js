@@ -98,6 +98,7 @@ var specialChar = [
     "}",
     "~",
 ];
+var numeric = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // ------- End Global Variables --------
 // This will tell the user what to click
@@ -134,6 +135,10 @@ Click "OK" for yes or "Cancel" for no`
             `Would you like to include special characters? 
 Click "OK" for yes or "Cancel" for no`
         );
+        includeNumeric = confirm(
+            `Would you like to include numbers? 
+Click "OK" for yes or "Cancel" for no`
+        );
     } else {
         // this will show if the user input a incorrect value
         alert(
@@ -153,6 +158,10 @@ Click "OK" for yes or "Cancel" for no`
     // this adds the uppercasecharacters to the array if the user selected the yes option
     if (includeUpper) {
         possibleChars = possibleChars.concat(alphabeticalUpperChar);
+    }
+    // this adds the uppercasecharacters to the array if the user selected the yes option
+    if (includeNumeric) {
+        possibleChars = possibleChars.concat(numeric);
     }
     // this calls the writePassword function to display to the password id box
     writePassword();
