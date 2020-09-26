@@ -135,6 +135,7 @@ Click "OK" for yes or "Cancel" for no`
             `Would you like to include special characters? 
 Click "OK" for yes or "Cancel" for no`
         );
+        // this checkes to see if they want numeric characters in the password and returns a true or false value
         includeNumeric = confirm(
             `Would you like to include numbers? 
 Click "OK" for yes or "Cancel" for no`
