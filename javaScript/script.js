@@ -100,9 +100,10 @@ var specialChar = [
 ];
 
 // ------- End Global Variables --------
-
+// This will tell the user what to click
 alert(`Welcome to the Password Generator!
 Click the "Generate Password" button to generate a new password!`);
+
 // this listens for a user click on the
 generateBtn.addEventListener("click", userPrompts);
 function userPrompts() {
