@@ -146,9 +146,11 @@ Click "OK" for yes or "Cancel" for no`
     if (includeSpecial) {
         possibleChars = possibleChars.concat(specialChar);
     }
+    // this adds the lowercase characters to the array if the user selected the yes option
     if (includeLower) {
         possibleChars = possibleChars.concat(alphabeticalLowerChar);
     }
+    // this adds the uppercasecharacters to the array if the user selected the yes option
     if (includeUpper) {
         possibleChars = possibleChars.concat(alphabeticalUpperChar);
     }
@@ -156,6 +158,7 @@ Click "OK" for yes or "Cancel" for no`
     writePassword();
 }
 
+//this function generates the password using the Math.random function and concatenating the selected requirements arrays
 function generatePassword() {
     var password = "";
     for (i = 0; i < passLength; i++) {
@@ -175,6 +178,3 @@ function writePassword() {
     // this sets the textarea variable to equal the password variable
     passwordText.value = password;
 }
-
-// Add event listener to generate button
-//generateBtn.addEventListener("click", writePassword);
