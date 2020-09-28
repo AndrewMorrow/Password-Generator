@@ -110,6 +110,7 @@ generateBtn.addEventListener("click", userPrompts);
 
 // function that runs all of the user prompts when the generate password button is clicked
 function userPrompts() {
+    possibleChars = [];
     alert(
         `The next few prompts will gather your requirements for your password.
 The "OK" button will select yes and the "Cancel" button will select no.`
