@@ -196,7 +196,6 @@ function generatePassword() {
         password +=
             possibleChars[Math.floor(possibleChars.length * Math.random())];
     }
-    console.log(password);
     return password;
 }
 
