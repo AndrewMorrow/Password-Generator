@@ -144,6 +144,17 @@ Click "OK" for yes or "Cancel" for no`
             `Would you like to include numbers? 
 Click "OK" for yes or "Cancel" for no`
         );
+        if (
+            !includeLower &&
+            !includeUpper &&
+            !includeSpecial &&
+            !includeNumeric
+        ) {
+            alert(
+                " Please select at least one character set. The generator will now start over."
+            );
+            userPrompts();
+        }
     } else {
         // this will show if the user input a incorrect value
         alert(
